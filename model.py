@@ -1,11 +1,8 @@
-#@markdown Implement the model.
-
 import dataclasses
 import math
 
 import einops
 import torch
-import tqdm
 
 
 def create_position(hidden_dimension: int, heads: int, sequence_length: int) -> torch.Tensor:
